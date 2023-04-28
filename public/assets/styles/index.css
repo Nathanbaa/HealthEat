@@ -12,9 +12,6 @@
     --swiper-navigation-color: var(--bg-white);
 
     --swiper-pagination-color: var(--dark-green);
-
-    --bs-accordion-active-color: none!important;
-    --bs-accordion-active-bg: none!important;
 }
 
 /* --- FONTS --- */
