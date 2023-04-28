@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthEat</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./public/assets/img/da/favicon.jpg" type="image/x-icon">
+    <!-- Bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Personal style -->
+    <link rel="stylesheet" href="./public/assets/styles/index.css">
+</head>
+
+<body>
+    <!-- Back to top button -->
+    <!-- <a id="back-to-top"></a> -->
+    <svg xmlns="http://www.w3.org/2000/svg" id="back-to-top" width="32" height="32" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-77.66a8,8,0,0,1-11.32,11.32L128,115.31,93.66,149.66a8,8,0,0,1-11.32-11.32l40-40a8,8,0,0,1,11.32,0Z"></path></svg>
+    <section id="hero">
+        <header>
+            <!-- <nav class="navbar fixed-top"> -->
+            <nav class="navbar fixed-top navbar-bg">
+                <div class="container">
+                    <!-- <div class="container-fluid"> -->
+                    <a class="navbar-brand" href="index.html"><img
+                            src="./public/assets/img/da/logo-HealthEat-Main-v2.webp" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu <span>( healthy <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm104,0a8,8,0,0,1-8,8H152a8,8,0,0,1,0-16h24A8,8,0,0,1,184,108Zm-9.08,48c-10.29,17.79-27.39,28-46.92,28s-36.63-10.2-46.93-28a8,8,0,1,1,13.86-8c7.46,12.91,19.2,20,33.07,20s25.61-7.1,33.08-20a8,8,0,1,1,13.84,8Z">
+                                        </path>
+                                    </svg> )</span></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#presentation">Le restaurant</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#recommendation-ink">Nos recommendations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#menu-ink">Le menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#promises">Nos promesses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#informations">Nous contacter</a>
+                                </li>
+                                <div class="nav-btn">
+                                    <a href="#" class="">boutique</a>
+                                    <a href="#" class="">mon compte</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container headline">
+            <h1>
+                Se faire <span>plaisir</span>, <br>
+                Tout en mangeant <br>
+                <span>Sainement !</span>
+            </h1>
+        </div>
+        <div id="table">
+            <img src="./public/assets/img/table/avocat.webp" id="avocado" alt="illustration avocats">
+            <img src="./public/assets/img/table/vinaigre-olive.webp" id="olive-oil"
+                alt="illustration bouteille vinaigre d'olive">
+            <!-- saladier -->
+            <img src="./public/assets/img/table/tomate-1.webp" class="rellax" data-rellax-speed="5" id="tomato-1"
+                alt="illustration tomate cerise">
+            <img src="./public/assets/img/table/tomate-2.webp" class="rellax" data-rellax-speed="2" id="tomato-2"
+                alt="illustration tomate cerise">
+            <img src="./public/assets/img/table/tomate-3.webp" class="rellax" data-rellax-speed="3" id="tomato-3"
+                alt="illustration tomate cerise">
+            <img src="./public/assets/img/table/saladier-v1.webp" id="bowl" alt="illustration saladier">
+        </div>
+    </section>
+
+    <!-- Presentation -->
+    <section id="presentation">
+        <div class="container">
+            <h2>Health<span>Eat</span></h2>
+            <!-- row 1 -->
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="desc">
+                        <div class="d-flex">
+                            <h3>Le restaurant</h3>
+                            <div class="desc-border"></div>
+                        </div>
+                        <p>
+                            Le restaurant HealthEat est un véritable trésor pour les amateurs de <span
+                                class="highlight">cuisine végétarienne</span>. <br>
+
+                            Niché au cœur de la ville, cet établissement moderne et chaleureux offre une <span
+                                class="highlight">expérience
+                                culinaire incroyablement raffinée</span>.<br>
+
+                            <a href="#menu-ink">Le menu</a> à retrouver plus bas, propose une sélection de plats
+                            créatifs et
+                            délicieux, préparés
+                            avec des <span class="highlight">ingrédients frais</span> et de <span
+                                class="highlight">qualité supérieure</span>.<br>
+
+                            <a href="#">Le personnel</a> est amical et attentionné, offrant un <span
+                                class="highlight">service impeccable</span> tout au long de votre
+                            repas.<br>
+
+                            Alors, si vous cherchez un endroit pour savourer des plats végétariens délicieux, le
+                            restaurant HealthEat est l'endroit parfait pour vous.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6">
+                    <img src="./public/assets/img/presentation/eat.webp" id="diner" alt="">
+                </div>
+            </div>
+
+            <!-- ici divider -->
+            <div class="divider"></div>
+
+            <!-- row 2 -->
+            <div class="row mt-5">
+                <div class="col-md-12 col-lg-6">
+                    <div class="desc">
+                        <div class="d-flex">
+                            <h3>Commande à emporter</h3>
+                            <div class="desc-border2"></div>
+                        </div>
+                        <p>
+                            Le restaurant HealthEat propose un service de <span class="highlight">commande à
+                                emporter</span> pratique pour ceux qui
+                            souhaitent déguster leur cuisine végétarienne préférée chez eux. <br>
+
+                            Commandez simplement via <a href="#">notre boutique</a> et venez récupérer votre
+                            nourriture
+                            directement au restaurant.<br>
+
+                            Malheureusement, la <span class="highlight">livraison à domicile n'est pas
+                                disponible</span>
+                            pour le moment.<br>
+
+                            Profitez de leur délicieuse <a href="#recommendation-ink">sélection de plats</a> à
+                            emporter
+                            et dégustez-les
+                            dans le confort de
+                            votre maison.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <img src="./public/assets/img/presentation/command.webp" id="command" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation -->
+    <section id="recommendation">
+        <h2 id="recommendation-ink">Les plats qu’on vous <br>recommande</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Swiper -->
+                <div id="swiper-simple-effect">
+                    <div class="swiper swiper-container mySwiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <img src="./public/assets/img/plats/pizza-courgettes.webp"
+                                        alt="pizza aux courgettes">
+                                    <div class="description-product">
+                                        <h4>pizza courgettes</h4>
+                                        <p>15.00€</p>
+                                    </div>
+                                    <div class="d-grid">
+                                        <a href="/pizza-courgettes.html" class="btn-product">découvrir</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <img src="./public/assets/img/plats/pizza-champignons.webp"
+                                        alt="pizza aux champignons">
+                                    <div class="description-product">
+                                        <h4>pizza-champignons</h4>
+                                        <p>15.00€</p>
+                                    </div>
+                                    <div class="d-grid">
+                                        <a href="/pizza-champignons.html" class="btn-product">découvrir</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <img src="./public/assets/img/plats/salade-fraicheur.webp" alt="salade fraicheur">
+                                    <div class="description-product">
+                                        <h4>salade fraicheur</h4>
+                                        <p>12.00€</p>
+                                    </div>
+                                    <div class="d-grid">
+                                        <a href="/salade-fraicheur.html" class="btn-product">découvrir</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <img src="./public/assets/img/plats/salade-gourmande.webp" alt="salade gourmande">
+                                    <div class="description-product">
+                                        <h4>salade gourmande</h4>
+                                        <p>15.00€</p>
+                                    </div>
+                                    <div class="d-grid">
+                                        <a href="/salade-gourmande.html" class="btn-product">découvrir</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <img src="./public/assets/img/plats/poke-bowl-light.webp" alt="poke bowl light">
+                                    <div class="description-product">
+                                        <h4>poke bowl light</h4>
+                                        <p>9.00€</p>
+                                    </div>
+                                    <div class="d-grid">
+                                        <a href="/poke-bowl-light.html" class="btn-product">découvrir</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <img src="./public/assets/img/plats/salade-fraicheur.webp" alt="salade fraicheur">
+                                    <div class="description-product">
+                                        <h4>salade fraicheur</h4>
+                                        <p>12.00€</p>
+                                    </div>
+                                    <div class="d-grid">
+                                        <a href="/salade-fraicheur.html" class="btn-product">découvrir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- navigation -->
+                        <div class="navigation d-flex justify-content-evenly">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <!--<div class="swiper-pagination"></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+        <div class="container">
+            <div class="d-flex">
+                <div class="divider-style"></div>
+                <h2 id="menu-ink">Le menu</h2>
+                <div class="divider-style"></div>
+            </div>
+            <!-- row 1 -->
+            <div class="row">
+                <div class="col-md-6 col-lg-7">
+                    <div class="section-menu">
+                        <h3>Nos pizzas</h3>
+                        <ul>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <h4><a href="/pizza-courgettes.html">Pizza courgettes</a></h4>
+                                    <p>15.00€</p>
+                                </div>
+                                <p>Pizza végétarienne à la courgette : courgettes grillées, mozzarella végétalienne,
+                                    sauce tomate maison sur une croûte croustillante. Un régal pour les amateurs de
+                                    pizza végétarienne.</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <h4><a href="/pizza-champignons.html">Pizza champignons</a></h4>
+                                    <p>15.00€</p>
+                                </div>
+                                <p>Pizza aux champignons : champignons frais tranchés, fromage fondant, sauce tomate
+                                    maison sur une croûte moelleuse. Un délice pour les amateurs de pizza aux
+                                    champignons.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div id="swiper-card-effect">
+                        <div class="swiper mySwiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./public/assets/img/plats/pizza-courgettes.webp"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="./public/assets/img/plats/pizza-champignons.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2 -->
+            <div class="row">
+                <div class="col-md-6 col-lg-7">
+                    <div class="section-menu">
+                        <h3>Nos salades</h3>
+                        <ul>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <h4><a href="/salade-fraicheur.html">Salade fraicheur</a></h4>
+                                    <p>12.00€</p>
+                                </div>
+                                <p>Salade fraîcheur avec mousse d'avocat crémeuse, tomates cerises juteuses, cacahuètes
+                                    croquantes et fleurs comestibles, accompagnée d'une vinaigrette légère et
+                                    rafraîchissante. Un choix sain et savoureux pour les amateurs de légumes frais.</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <h4><a href="/salade-gourmande.html">Salade gourmande</a></h4>
+                                    <p>12.00€</p>
+                                </div>
+                                <p>Salade gourmande avec des fleurons de brocoli croquants, des patates douces rôties,
+                                    des croûtons de pain croustillants et du boulgour tendre. Le tout est arrosé d'une
+                                    vinaigrette au choix et garni d'herbes fraîches pour une touche de saveur. Une
+                                    salade délicieuse et rassasiante pour tous les amateurs de légumes et de céréales.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div id="swiper-card-effect">
+                        <div class="swiper mySwiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./public/assets/img/plats/salade-fraicheur.webp"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="./public/assets/img/plats/salade-gourmande.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row 3 -->
+            <div class="row">
+                <div class="col-md-6 col-lg-7">
+                    <div class="section-menu">
+                        <h3>Nos poke bowl</h3>
+                        <ul>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <h4><a href="/poke-bowl-light.html">Poke bowl light</a></h4>
+                                    <p>8.50€</p>
+                                </div>
+                                <p>Poke Bowl light est un plat sain et coloré, composé de légumes frais et de riz. Il
+                                    contient du maïs doux croquant, des carottes râpées, du concombre frais et du riz
+                                    blanc ou brun. Le tout est arrosé d'une vinaigrette légère pour une touche de
+                                    saveur. Un choix délicieux et nourrissant pour tous les amateurs de Poke Bowl
+                                    végétarien.</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <h4><a href="/poke-bowl-light.html">Poke bowl généreux</a></h4>
+                                    <p>10.00€</p>
+                                </div>
+                                <p>Poke Bowl light est un plat sain et coloré, composé de légumes frais et de riz. Il
+                                    contient du maïs doux croquant, des carottes râpées, du concombre frais et du riz
+                                    blanc ou brun. Le tout est arrosé d'une vinaigrette légère pour une touche de
+                                    saveur. Un choix délicieux et nourrissant pour tous les amateurs de Poke Bowl
+                                    végétarien.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div id="swiper-card-effect">
+                        <div class="swiper mySwiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./public/assets/img/plats/poke-bowl-light.webp"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="./public/assets/img/plats/poke-bowl-light.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="/légumes-de-saison.html" class="btn-menu">légumes de saison</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- promises -->
+    <section id="promises">
+        <div class="container">
+            <h2>Nos promesses</h2>
+            <div class="row">
+                <div class="col-sm-12 col-sm-6 col-lg-4">
+                    <div class="promise">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#394D37"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M223.45,40.07a8,8,0,0,0-7.52-7.52C139.8,28.08,78.82,51,52.82,94a87.09,87.09,0,0,0-12.76,49c.57,15.92,5.21,32,13.79,47.85l-19.51,19.5a8,8,0,0,0,11.32,11.32l19.5-19.51C81,210.73,97.09,215.37,113,215.94q1.67.06,3.33.06A86.93,86.93,0,0,0,162,203.18C205,177.18,227.93,116.21,223.45,40.07ZM153.75,189.5c-22.75,13.78-49.68,14-76.71.77l88.63-88.62a8,8,0,0,0-11.32-11.32L65.73,179c-13.19-27-13-54,.77-76.71,22.09-36.47,74.6-56.44,141.31-54.06C210.2,114.89,190.22,167.41,153.75,189.5Z">
+                            </path>
+                        </svg>
+                        <h3>Des produits <br>frais</h3>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-sm-6 col-lg-4">
+                    <div class="promise">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#394D37"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z">
+                            </path>
+                        </svg>
+                        <h3>Des produits <br>locaux</h3>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-sm-6 col-lg-4">
+                    <div class="promise">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#394D37"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,176,108Zm-1.07,48c-10.29,17.79-27.4,28-46.93,28s-36.63-10.2-46.92-28a8,8,0,1,1,13.84-8c7.47,12.91,19.21,20,33.08,20s25.61-7.1,33.07-20a8,8,0,0,1,13.86,8Z">
+                            </path>
+                        </svg>
+                        <h3>Du plaisir en <br>assiette</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- informations -->
+    <section id="informations">
+        <div class="container">
+            <h2>informations</h2>
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <div id="contact">
+                        <img src="./public/assets/img/da/logo-HealthEat-Main-v2.webp" alt="">
+                        <p>Ouvert du lundi au vendredi de 7h à 16h <br>
+                            5 place de VILLE 30600 <br>
+                            <a href="tel:+33233333302">02-33-33-33-02</a> <br>
+                            <a href="mailto:contact@healtheat.fr">contact@healtheat.fr</a>
+                        </p>
+                        <!-- <div class="mt-5">
+                            <a href="#" class="btn-contact">nous-contacter</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div id="map">
+                        <img src="./public/assets/img/map.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="row" id="newsletter">
+        <div class="col-md-6">
+            <h3>Inscrivez-vous à notre newsletter !</h3>
+        </div>
+        <div class="col-md-6">
+            <input type="email" id="email" name="email" placeholder="adresse@email.com">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                    <path
+                        d="M227.32,28.68a16,16,0,0,0-15.66-4.08l-.15,0L19.57,82.84a16,16,0,0,0-2.42,29.84l85.62,40.55,40.55,85.62A15.86,15.86,0,0,0,157.74,248q.69,0,1.38-.06a15.88,15.88,0,0,0,14-11.51l58.2-191.94c0-.05,0-.1,0-.15A16,16,0,0,0,227.32,28.68ZM157.83,231.85l-.05.14L118.42,148.9l47.24-47.25a8,8,0,0,0-11.31-11.31L107.1,137.58,24,98.22l.14,0L216,40Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <footer class="container-fluid">
+
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <!-- <img src="./public/assets/img/da/logo-HealthEat-Main-v2.webp" alt="logo HealthEat"> -->
+                        <h4>Restaurant végétarien.</h4>
+                        <hr>
+                        <h5>Nous suivre:</h5>
+                        <ul class="d-flex" id="social">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4>Navigation</h4>
+                        <hr>
+                        <ul id="navigation">
+                            <li><a href="/index.html">Accueil</a></li>
+                            <li><a href="/index.html#presentation">Le Restaurant</a></li>
+                            <li><a href="/index.html#menu-ink">Le menu</a></li>
+                            <li><a href="/index.html#informations">Nous contacter</a></li>
+                            <li><a href="#">Boutique</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4>Instagram Feed</h4>
+                        <hr>
+                        <div class="container-fluid">
+                            <div class="row" id="feed">
+                                <!-- <div class="col-sm-4"> -->
+                                <div class="square">
+                                </div>
+                                <!-- </div> -->
+                                <!-- <div class="col-sm-4"> -->
+                                <div class="square">
+                                </div>
+                                <!-- </div> -->
+                                <!-- <div class="col-sm-4"> -->
+                                <div class="square">
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                            <div class="row" id="feed">
+                                <!-- <div class="col-sm-4"> -->
+                                <div class="square">
+                                </div>
+                                <!-- </div> -->
+                                <!-- <div class="col-sm-4"> -->
+                                <div class="square">
+                                </div>
+                                <!-- </div> -->
+                                <!-- <div class="col-sm-4"> -->
+                                <div class="square">
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="nature"></div>
+            </div>
+            <div id="mentions">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h6>© <span>Health</span>Eat</h6>
+                        </div>
+                        <div class="col-lg-5">
+                            <ul class="d-flex justify-content-between">
+                                <li><a href="#">mentions légales</a></li>
+                                <li><a href="#">politique de confidentialité</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Back To Top script -->
+    <script src="./public/assets/js/back-to-top.js"></script>
+    <!-- Scroll effect -->
+    <script src="./public/assets/js/scroll-effect.js"></script>
+    <!-- RELLAX JS -->
+    <script src="./node_modules/rellax/rellax.min.js"></script>
+    <!-- Rellax JS use -->
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper simple effect -->
+    <script src="./public/assets/js/swiper-simple-effect.js"></script>
+    <!-- Swiper card effect -->
+    <script src="./public/assets/js/swiper-card-effect.js"></script>
+
+</body>
+
+</html>
